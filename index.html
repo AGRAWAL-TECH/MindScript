@@ -1,0 +1,414 @@
+<html class="scroll-smooth" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   MindScript - Academic Success Platform
+  </title>
+  <meta content="MindScript is your ultimate resource for academic success, offering free and premium study notes, expert tips, and interactive learning tools." name="description"/>
+  <meta content="Academic, Notes, Study, Physics, Chemistry, Mathematics, Biology, Computer Science, Education, Learning" name="keywords"/>
+  <meta content="MindScript Team" name="author"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&amp;family=Poppins:wght@300;400;600&amp;family=Manrope:wght@400;600&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+  </script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body class="bg-neutral-light text-neutral-dark dark:bg-neutral-dark dark:text-neutral-light transition-colors duration-500">
+  <!-- Sticky Navbar -->
+  <nav class="fixed top-0 left-0 right-0 z-40 bg-neutral-light dark:bg-neutral-dark shadow-md dark:shadow-lg transition-colors duration-500" id="navbar">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-16 items-center">
+     <a aria-label="MindScript Home" class="text-2xl font-extrabold tracking-widest text-primary dark:text-accent select-none" href="#">
+      MindScript
+     </a>
+     <button aria-controls="navMenu" aria-expanded="false" aria-label="Toggle menu" class="md:hidden text-primary dark:text-accent focus:outline-none focus:ring-2 focus:ring-accent" id="navToggle">
+      <svg class="h-8 w-8" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+       <path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round">
+       </path>
+      </svg>
+     </button>
+     <ul class="hidden md:flex space-x-8 font-semibold text-neutral-dark dark:text-neutral-light" id="navMenu">
+      <li>
+       <a class="hover:text-primary dark:hover:text-accent transition-colors" href="../home-page/home.html">
+        Home
+       </a>
+      </li>
+      <li>
+       <a class="hover:text-primary dark:hover:text-accent transition-colors" href="../paid-content/paidcontent.html">
+        Paid Content
+       </a>
+      </li>
+      <li>
+       <a class="hover:text-primary dark:hover:text-accent transition-colors" href="../about-page/about.html">
+        About Us
+       </a>
+      </li>
+      <li>
+       <a class="hover:text-primary dark:hover:text-accent transition-colors" href="../contact-page/contact.html">
+        Contact
+       </a>
+      </li>
+      <li>
+       <a class="hover:text-primary dark:hover:text-accent transition-colors" href="../ray-page/ray.html">
+        Practicals (Physics)
+       </a>
+      </li>
+     </ul>
+     <div class="hidden md:flex items-center space-x-4">
+      <button aria-label="Toggle dark mode" class="focus:ring-2 focus:ring-accent rounded" id="darkModeToggle" title="Toggle dark mode">
+       <i class="fas fa-moon">
+       </i>
+      </button>
+      <button class="btn-primary focus:ring-2 focus:ring-accent rounded px-4 py-2" data-bs-target="#loginModal" data-bs-toggle="modal">
+       Login
+      </button>
+     </div>
+    </div>
+   </div>
+   <!-- Mobile menu -->
+   <div class="md:hidden bg-neutral-light dark:bg-neutral-dark px-4 pb-4 hidden" id="mobileMenu">
+    <ul class="space-y-3 font-semibold text-neutral-dark dark:text-neutral-light">
+     <li>
+      <a class="block hover:text-primary dark:hover:text-accent transition-colors" href="../home-page/home.html">
+       Home
+      </a>
+     </li>
+     <li>
+      <a class="block hover:text-primary dark:hover:text-accent transition-colors" href="../paid-content/paidcontent.html">
+       Paid Content
+      </a>
+     </li>
+     <li>
+      <a class="block hover:text-primary dark:hover:text-accent transition-colors" href="../about-page/about.html">
+       About Us
+      </a>
+     </li>
+     <li>
+      <a class="block hover:text-primary dark:hover:text-accent transition-colors" href="../contact-page/contact.html">
+       Contact
+      </a>
+     </li>
+     <li>
+      <a class="block hover:text-primary dark:hover:text-accent transition-colors" href="../ray-page/ray.html">
+       Practicals (Physics)
+      </a>
+     </li>
+     <li>
+      <button class="btn-primary w-full mt-2" data-bs-target="#loginModal" data-bs-toggle="modal">
+       Login
+      </button>
+     </li>
+     <li>
+      <button aria-label="Toggle dark mode" class="w-full text-left text-primary dark:text-accent focus:ring-2 focus:ring-accent rounded px-2 py-2" id="darkModeToggleMobile" title="Toggle dark mode">
+       <i class="fas fa-moon mr-2">
+       </i>
+       Toggle Dark Mode
+      </button>
+     </li>
+    </ul>
+   </div>
+  </nav>
+  <main class="pt-20">
+   <!-- Hero Section -->
+   <section aria-label="Hero section" class="relative bg-neutral-dark dark:bg-neutral-light overflow-hidden">
+    <img alt="A cozy study environment with books, a laptop, and warm lighting, representing academic focus and learning" class="w-full h-auto object-cover opacity-90 scale-105 transition-transform duration-1000 ease-out" height="600" loading="lazy" src="https://storage.googleapis.com/a1aa/image/d809b7d2-854e-468a-92ec-9f81a9caa9c4.jpg" width="1280"/>
+    <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center px-6 text-center">
+     <h1 class="glitch max-w-4xl mx-auto text-neutral-light dark:text-neutral-dark select-none" data-text="Welcome to MindScript" tabindex="0">
+      Welcome to MindScript
+     </h1>
+     <p class="mt-4 max-w-2xl mx-auto text-lg sm:text-xl font-medium text-neutral-light dark:text-neutral-dark leading-relaxed" tabindex="0">
+      Your ultimate resource for academic success
+     </p>
+     <a aria-label="Explore Notes" class="btn-primary mt-8 inline-block text-lg sm:text-xl shadow-lg hover:shadow-xl focus:shadow-xl focus:outline-none focus:ring-4 focus:ring-primary/50 transition-transform transform hover:-translate-y-1 active:translate-y-0 rounded-full px-8 py-3" href="/home page/home.html">
+      Explore Notes
+     </a>
+    </div>
+   </section>
+   <!-- Features Section -->
+   <section aria-label="Features" class="max-w-7xl mx-auto px-6 py-16 md:py-24" data-aos="fade-up">
+    <h2 class="text-3xl sm:text-4xl font-extrabold text-center text-primary dark:text-accent mb-12">
+     Features
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+     <article class="bg-neutral-light dark:bg-neutral-dark rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300" data-aos="zoom-in" data-aos-delay="100" tabindex="0">
+      <svg aria-hidden="true" class="h-12 w-12 text-primary dark:text-accent mb-4 mx-auto" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+       <path d="M12 8c-1.657 0-3 1.343-3 3v4h6v-4c0-1.657-1.343-3-3-3z" stroke-linecap="round" stroke-linejoin="round">
+       </path>
+       <path d="M12 4v4" stroke-linecap="round" stroke-linejoin="round">
+       </path>
+      </svg>
+      <h3 class="text-xl font-semibold text-center mb-2">
+       Comprehensive Notes
+      </h3>
+      <p class="text-center text-neutral-dark dark:text-neutral-light">
+       Access detailed notes across multiple subjects, curated by experts.
+      </p>
+     </article>
+     <article class="bg-neutral-light dark:bg-neutral-dark rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300" data-aos="zoom-in" data-aos-delay="200" tabindex="0">
+      <svg aria-hidden="true" class="h-12 w-12 text-primary dark:text-accent mb-4 mx-auto" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+       <path d="M9 12h6" stroke-linecap="round" stroke-linejoin="round">
+       </path>
+       <path d="M12 9v6" stroke-linecap="round" stroke-linejoin="round">
+       </path>
+      </svg>
+      <h3 class="text-xl font-semibold text-center mb-2">
+       Interactive Learning
+      </h3>
+      <p class="text-center text-neutral-dark dark:text-neutral-light">
+       Engage with quizzes, flashcards, and practical exercises.
+      </p>
+     </article>
+     <article class="bg-neutral-light dark:bg-neutral-dark rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300" data-aos="zoom-in" data-aos-delay="300" tabindex="0">
+      <svg aria-hidden="true" class="h-12 w-12 text-primary dark:text-accent mb-4 mx-auto" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+       <path d="M3 10h18" stroke-linecap="round" stroke-linejoin="round">
+       </path>
+       <path d="M3 14h18" stroke-linecap="round" stroke-linejoin="round">
+       </path>
+      </svg>
+      <h3 class="text-xl font-semibold text-center mb-2">
+       Expert Guidance
+      </h3>
+      <p class="text-center text-neutral-dark dark:text-neutral-light">
+       Get tips and advice from academic professionals.
+      </p>
+     </article>
+     <article class="bg-neutral-light dark:bg-neutral-dark rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300" data-aos="zoom-in" data-aos-delay="400" tabindex="0">
+      <svg aria-hidden="true" class="h-12 w-12 text-primary dark:text-accent mb-4 mx-auto" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+       <path d="M12 20l9-5-9-5-9 5 9 5z" stroke-linecap="round" stroke-linejoin="round">
+       </path>
+      </svg>
+      <h3 class="text-xl font-semibold text-center mb-2">
+       Premium Content
+      </h3>
+      <p class="text-center text-neutral-dark dark:text-neutral-light">
+       Unlock exclusive notes and study materials with paid plans.
+      </p>
+     </article>
+    </div>
+   </section>
+   <!-- Benefits Section -->
+   <section aria-label="Benefits" class="bg-neutral-light dark:bg-neutral-dark py-16 px-6" data-aos="fade-up">
+    <div class="max-w-5xl mx-auto text-center">
+     <h2 class="text-3xl sm:text-4xl font-extrabold text-primary dark:text-accent mb-8">
+      Why Choose MindScript?
+     </h2>
+     <ul class="grid grid-cols-1 md:grid-cols-3 gap-10 text-neutral-dark dark:text-neutral-light text-lg font-medium">
+      <li class="flex flex-col items-center space-y-3" tabindex="0">
+       <svg aria-hidden="true" class="h-14 w-14 text-primary dark:text-accent" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round">
+        </path>
+       </svg>
+       <p>
+        Reliable and up-to-date academic resources.
+       </p>
+      </li>
+      <li class="flex flex-col items-center space-y-3" tabindex="0">
+       <svg aria-hidden="true" class="h-14 w-14 text-primary dark:text-accent" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 8v4l3 3" stroke-linecap="round" stroke-linejoin="round">
+        </path>
+       </svg>
+       <p>
+        Save time with organized and easy-to-access notes.
+       </p>
+      </li>
+      <li class="flex flex-col items-center space-y-3" tabindex="0">
+       <svg aria-hidden="true" class="h-14 w-14 text-primary dark:text-accent" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round">
+        </path>
+       </svg>
+       <p>
+        Boost your confidence with expert tips and practice.
+       </p>
+      </li>
+     </ul>
+    </div>
+   </section>
+   <!-- Testimonials Section -->
+   <section aria-label="Testimonials" class="max-w-5xl mx-auto px-6 py-16 relative" data-aos="fade-up">
+    <h2 class="text-3xl sm:text-4xl font-extrabold text-center text-primary dark:text-accent mb-12">
+     What Our Students Say
+    </h2>
+    <div class="relative h-64 md:h-48 overflow-hidden">
+     <article aria-atomic="true" aria-live="polite" class="testimonial-slide active bg-neutral-light dark:bg-neutral-dark rounded-xl p-8 shadow-lg text-center flex flex-col justify-center items-center space-y-4" tabindex="0">
+      <img alt="Portrait of a happy female student with glasses smiling" class="rounded-full w-24 h-24 object-cover mx-auto" height="96" loading="lazy" src="https://storage.googleapis.com/a1aa/image/8d7a5ffa-f05b-4d42-fb80-98ee44fd9de3.jpg" width="96"/>
+      <p class="italic text-lg max-w-xl">
+       "MindScript helped me organize my study materials and improve my grades significantly. The notes are clear and easy to understand."
+      </p>
+      <p class="font-semibold text-primary dark:text-accent">
+       - Anjali Sharma
+      </p>
+     </article>
+     <article aria-atomic="true" aria-live="polite" class="testimonial-slide bg-neutral-light dark:bg-neutral-dark rounded-xl p-8 shadow-lg text-center flex flex-col justify-center items-center space-y-4" hidden="" tabindex="0">
+      <img alt="Portrait of a young male student with headphones studying" class="rounded-full w-24 h-24 object-cover mx-auto" height="96" loading="lazy" src="https://storage.googleapis.com/a1aa/image/3a4991ed-a5eb-413b-0d7c-49a6f4d28249.jpg" width="96"/>
+      <p class="italic text-lg max-w-xl">
+       "The premium content is worth every penny. The practice questions and expert tips gave me the edge I needed."
+      </p>
+      <p class="font-semibold text-primary dark:text-accent">
+       - Rohit Kumar
+      </p>
+     </article>
+     <article aria-atomic="true" aria-live="polite" class="testimonial-slide bg-neutral-light dark:bg-neutral-dark rounded-xl p-8 shadow-lg text-center flex flex-col justify-center items-center space-y-4" hidden="" tabindex="0">
+      <img alt="Portrait of a confident female student with curly hair" class="rounded-full w-24 h-24 object-cover mx-auto" height="96" loading="lazy" src="https://storage.googleapis.com/a1aa/image/a47885bd-9133-4e9b-740f-4e0f63bc3c18.jpg" width="96"/>
+      <p class="italic text-lg max-w-xl">
+       "I love the interactive quizzes and flashcards. They make learning fun and effective."
+      </p>
+      <p class="font-semibold text-primary dark:text-accent">
+       - Priya Singh
+      </p>
+     </article>
+    </div>
+    <div class="flex justify-center space-x-4 mt-8">
+     <button aria-label="Previous testimonial" class="p-3 rounded-full bg-primary dark:bg-accent text-neutral-light dark:text-neutral-dark hover:bg-primary/80 dark:hover:bg-accent/80 transition-colors focus:outline-none focus:ring-2 focus:ring-primary dark:focus:ring-accent" id="prevTestimonial">
+      <i class="fas fa-chevron-left">
+      </i>
+     </button>
+     <button aria-label="Next testimonial" class="p-3 rounded-full bg-primary dark:bg-accent text-neutral-light dark:text-neutral-dark hover:bg-primary/80 dark:hover:bg-accent/80 transition-colors focus:outline-none focus:ring-2 focus:ring-primary dark:focus:ring-accent" id="nextTestimonial">
+      <i class="fas fa-chevron-right">
+      </i>
+     </button>
+    </div>
+   </section>
+   <!-- Call to Action Section -->
+   <section aria-label="Call to action" class="bg-primary dark:bg-accent text-neutral-light dark:text-neutral-dark py-16 px-6 text-center" data-aos="fade-up">
+    <h2 class="text-3xl sm:text-4xl font-extrabold mb-6">
+     Ready to Boost Your Academic Success?
+    </h2>
+    <p class="max-w-3xl mx-auto mb-8 text-lg sm:text-xl font-medium">
+     Join thousands of students who trust MindScript for their study needs. Unlock premium content and start excelling today.
+    </p>
+    <a aria-label="Buy Premium Package" class="btn-accent inline-block text-lg sm:text-xl shadow-lg hover:shadow-xl focus:shadow-xl focus:outline-none focus:ring-4 focus:ring-accent/50 transition-transform transform hover:-translate-y-1 active:translate-y-0 rounded-full px-10 py-4 font-semibold" href="/buynow page/buynow.html">
+     Buy Premium Package
+    </a>
+   </section>
+   <!-- FAQ Accordion Section -->
+   <section aria-label="Frequently Asked Questions" class="max-w-5xl mx-auto px-6 py-16" data-aos="fade-up">
+    <h2 class="text-3xl sm:text-4xl font-extrabold text-center text-primary dark:text-accent mb-12">
+     Frequently Asked Questions
+    </h2>
+    <div data-accordion="">
+     <button aria-controls="faq1" aria-expanded="false" class="flex justify-between items-center" id="faq1-btn" type="button">
+      What subjects are covered in MindScript?
+      <svg aria-hidden="true" class="h-6 w-6 ml-2 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+       <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round">
+       </path>
+      </svg>
+     </button>
+     <div aria-labelledby="faq1-btn" class="max-h-0 overflow-hidden transition-max-height duration-300" id="faq1" role="region">
+      <p class="py-4 text-neutral-dark dark:text-neutral-light">
+       MindScript covers Mathematics, Physics, Chemistry, Biology, and Computer Science with both free and premium content.
+      </p>
+     </div>
+     <button aria-controls="faq2" aria-expanded="false" class="flex justify-between items-center mt-4" id="faq2-btn" type="button">
+      How do I access premium content?
+      <svg aria-hidden="true" class="h-6 w-6 ml-2 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+       <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round">
+       </path>
+      </svg>
+     </button>
+     <div aria-labelledby="faq2-btn" class="max-h-0 overflow-hidden transition-max-height duration-300" id="faq2" role="region">
+      <p class="py-4 text-neutral-dark dark:text-neutral-light">
+       You can unlock premium notes and exclusive study materials by purchasing our packages available on the Buy Now page.
+      </p>
+     </div>
+     <button aria-controls="faq3" aria-expanded="false" class="flex justify-between items-center mt-4" id="faq3-btn" type="button">
+      Is there a mobile app available?
+      <svg aria-hidden="true" class="h-6 w-6 ml-2 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+       <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round">
+       </path>
+      </svg>
+     </button>
+     <div aria-labelledby="faq3-btn" class="max-h-0 overflow-hidden transition-max-height duration-300" id="faq3" role="region">
+      <p class="py-4 text-neutral-dark dark:text-neutral-light">
+       Currently, MindScript is a web platform optimized for mobile and desktop browsers. A mobile app is in development.
+      </p>
+     </div>
+     <button aria-controls="faq4" aria-expanded="false" class="flex justify-between items-center mt-4" id="faq4-btn" type="button">
+      How can I contact support?
+      <svg aria-hidden="true" class="h-6 w-6 ml-2 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+       <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round">
+       </path>
+      </svg>
+     </button>
+     <div aria-labelledby="faq4-btn" class="max-h-0 overflow-hidden transition-max-height duration-300" id="faq4" role="region">
+      <p class="py-4 text-neutral-dark dark:text-neutral-light">
+       You can reach out to us via the Contact page or email us at support@mindscript.com.
+      </p>
+     </div>
+    </div>
+   </section>
+  </main>
+  <!-- Scroll to Top Button -->
+  <button aria-label="Scroll to top" class="focus:outline-none focus:ring-2 focus:ring-primary dark:focus:ring-accent" id="scrollTopBtn" title="Scroll to top" type="button">
+   <i class="fas fa-arrow-up">
+   </i>
+  </button>
+  <!-- Login Modal -->
+  <div aria-hidden="true" aria-labelledby="loginModalLabel" aria-modal="true" class="fixed inset-0 z-50 hidden items-center justify-center bg-black bg-opacity-50" id="loginModal" role="dialog">
+   <div class="bg-neutral-light dark:bg-neutral-dark rounded-lg shadow-lg max-w-md w-full p-6 relative">
+    <h2 class="text-2xl font-bold mb-4 text-neutral-dark dark:text-neutral-light" id="loginModalLabel">
+     Login
+    </h2>
+    <button aria-label="Close login modal" class="absolute top-4 right-4 text-neutral-dark dark:text-neutral-light hover:text-primary dark:hover:text-accent focus:outline-none focus:ring-2 focus:ring-primary dark:focus:ring-accent rounded" id="closeLoginModal">
+     <i class="fas fa-times text-xl">
+     </i>
+    </button>
+    <form class="space-y-4" id="loginForm" novalidate="">
+     <div>
+      <label class="block mb-1 font-semibold text-neutral-dark dark:text-neutral-light" for="email">
+       Email address
+      </label>
+      <input class="w-full rounded-md border border-gray-300 dark:border-gray-600 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary dark:focus:ring-accent bg-neutral-light dark:bg-neutral-dark text-neutral-dark dark:text-neutral-light" id="email" name="email" placeholder="Enter your email" required="" type="email"/>
+     </div>
+     <div>
+      <label class="block mb-1 font-semibold text-neutral-dark dark:text-neutral-light" for="password">
+       Password
+      </label>
+      <input class="w-full rounded-md border border-gray-300 dark:border-gray-600 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary dark:focus:ring-accent bg-neutral-light dark:bg-neutral-dark text-neutral-dark dark:text-neutral-light" id="password" name="password" placeholder="Password" required="" type="password"/>
+     </div>
+     <button aria-label="Login" class="btn-primary w-full" type="submit">
+      Login
+     </button>
+    </form>
+   </div>
+  </div>
+  <!-- Footer -->
+  <footer class="bg-primary dark:bg-accent text-neutral-light dark:text-neutral-dark py-8 mt-16">
+   <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+    <p class="text-sm md:text-base select-none">
+     © MindScript. All rights reserved.
+    </p>
+    <nav aria-label="Social media links" class="space-x-6 text-sm md:text-base">
+     <a aria-label="Instagram" class="hover:text-neutral-light dark:hover:text-neutral-dark transition-colors inline-flex items-center space-x-2" href="#">
+      <i class="fab fa-instagram">
+      </i>
+      <span>
+       Instagram
+      </span>
+     </a>
+     <a aria-label="Facebook" class="hover:text-neutral-light dark:hover:text-neutral-dark transition-colors inline-flex items-center space-x-2" href="#">
+      <i class="fab fa-facebook-f">
+      </i>
+      <span>
+       Facebook
+      </span>
+     </a>
+     <a aria-label="Twitter" class="hover:text-neutral-light dark:hover:text-neutral-dark transition-colors inline-flex items-center space-x-2" href="#">
+      <i class="fab fa-twitter">
+      </i>
+      <span>
+       Twitter
+      </span>
+     </a>
+    </nav>
+   </div>
+  </footer>
+  <script src="script.js" type="module">
+  </script>
+ </body>
+</html>

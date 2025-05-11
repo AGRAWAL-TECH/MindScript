@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Content - MindScript</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #1a202c;
+            /* Dark background */
+        }
+
+        .card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn {
+            transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+
+        .btn:hover {
+            background-color: #f6e05e;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="text-gray-200">
+        <!-- Navbar -->
+        <nav class="bg-gray-800 p-4 shadow-md">
+            <div class="container mx-auto flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold text-yellow-400">MindScript</a>
+                <div class="hidden md:flex md:flex-row md:space-x-4">
+                    <a href="../home-page/home.html" class="px-4 py-2 hover:bg-gray-700 rounded">Home</a>
+                    <a href="../paid-content/paidcontent.html" class="px-4 py-2 bg-yellow-400 text-gray-900 rounded">Premium Content</a>
+                    <a href="index.html" class="px-4 py-2 hover:bg-gray-700 rounded">Dashboard</a>
+                    <a href="../ray-page/ray.html" class="px-4 py-2 hover:bg-gray-700 rounded">Practicals(Physics)</a>
+                    <a href="../about-page/about.html" class="px-4 py-2 hover:bg-gray-700 rounded">About Us</a>
+                    <a href="../contact-page/contact.html" class="px-4 py-2 hover:bg-gray-700 rounded">Contact</a>
+                </div>
+            </div>
+        </nav>
+        <!-- Premium Content Section -->
+        <section class="container mx-auto my-10 p-6 bg-gray-800 shadow-xl rounded-lg">
+            <h1 class="text-5xl font-bold text-center text-yellow-400 mb-10">Premium Content</h1>
+            <p class="text-lg leading-relaxed text-center mb-10">
+                Unlock the best resources with <span class="font-semibold text-yellow-400">MindScript</span>. Our
+                premium content is curated to provide you with exclusive, high-quality study materials that give you an edge
+                in your academic journey.
+            </p>
+
+            <!-- Content Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="card bg-gray-700 p-6 rounded-lg shadow-lg hover:bg-gray-600">
+                    <h2 class="text-2xl font-bold text-yellow-400 mb-4">Exclusive Chemistry Notes</h2>
+                    <p class="mb-6">
+                        Get access to detailed and easy-to-understand notes for all chapters in Class 12 Chemistry, designed
+                        by experts.
+                    </p>
+                    <a href="../buynow-page/buynow.html" class="btn bg-yellow-400 text-gray-900 font-bold py-2 px-4 rounded-full">Buy
+                        Now</a>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card bg-gray-700 p-6 rounded-lg shadow-lg hover:bg-gray-600">
+                    <h2 class="text-2xl font-bold text-yellow-400 mb-4">Maths Problem Solving Guides</h2>
+                    <p class="mb-6">
+                        Master difficult concepts with our problem-solving guides, packed with tips and tricks for exam
+                        success.
+                    </p>
+                    <a href="../buynow-page/buynow.html" class="btn bg-yellow-400 text-gray-900 font-bold py-2 px-4 rounded-full">Buy
+                        Now</a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card bg-gray-700 p-6 rounded-lg shadow-lg hover:bg-gray-600">
+                    <h2 class="text-2xl font-bold text-yellow-400 mb-4">Physics Concept Videos</h2>
+                    <p class="mb-6">
+                        Access our premium video library with hours of in-depth explanations on key physics concepts.
+                    </p>
+                    <a href="../buynow-page/buynow.html" class="btn bg-yellow-400 text-gray-900 font-bold py-2 px-4 rounded-full">Buy
+                        Now</a>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="card bg-gray-700 p-6 rounded-lg shadow-lg hover:bg-gray-600">
+                    <h2 class="text-2xl font-bold text-yellow-400 mb-4">Complete Study Packages</h2>
+                    <p class="mb-6">
+                        All-in-one packages with notes, guides, and videos across subjects to give you comprehensive
+                        preparation.
+                    </p>
+                    <a href="../buynow-page/buynow.html" class="btn bg-yellow-400 text-gray-900 font-bold py-2 px-4 rounded-full">Buy
+                        Now</a>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="card bg-gray-700 p-6 rounded-lg shadow-lg hover:bg-gray-600">
+                    <h2 class="text-2xl font-bold text-yellow-400 mb-4">Customized Study Plans</h2>
+                    <p class="mb-6">
+                        Get a personalized study plan based on your goals, strengths, and weaknesses, crafted by our
+                        experts.
+                    </p>
+                    <a href="../buynow-page/buynow.html" class="btn bg-yellow-400 text-gray-900 font-bold py-2 px-4 rounded-full">Buy
+                        Now</a>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="card bg-gray-700 p-6 rounded-lg shadow-lg hover:bg-gray-600">
+                    <h2 class="text-2xl font-bold text-yellow-400 mb-4">Exclusive PYQ Solutions</h2>
+                    <p class="mb-6">
+                        Detailed solutions to previous years' questions, with step-by-step explanations to help you score
+                        high.
+                    </p>
+                    <a href="../buynow-page/buynow.html" class="btn bg-yellow-400 text-gray-900 font-bold py-2 px-4 rounded-full">Buy
+                        Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-gray-800 text-white p-4 mt-10">
+            <div class="container mx-auto text-center">
+                MindScript. All rights reserved.
+            </div>
+        </footer>
+    </header>
+
+    <script>
+        function toggleMenu() {
+            const navContainer = document.querySelector('nav .container');
+            navContainer.classList.toggle('show-menu');
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+/* Add a smooth transition effect to the form inputs and buttons */
+.transition-all {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Add a smooth transition effect to the form inputs */
+.transition-inputs {
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Add a smooth transition effect to the form buttons */
+.transition-buttons {
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Add hover effect to form inputs */
+input[type="text"]:hover, input[type="email"]:hover, textarea:hover {
+    border-color: #F59E0B;
+    box-shadow: 0 0 10px rgba(245, 158, 11, 0.5);
+}
+
+/* Add focus effect to form inputs */
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border-color: #F59E0B;
+    box-shadow: 0 0 10px rgba(245, 158, 11, 0.7);
+}
+
+/* Style the submit button */
+button[type="submit"] {
+    background-color: #F59E0B;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #D97706;
+}
+
+button[type="submit"]:active {
+    background-color: #B45309;
+}
+
+/* Add padding and margin to the form */
+form {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+/* Style the form labels */
+label {
+    font-weight: bold;
+    color: #374151;
+}
+
+/* Style the form inputs */
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #D1D5DB;
+    border-radius: 5px;
+}
+
+/* Style the form container */
+.form-container {
+    background-color: #F9FAFB;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}

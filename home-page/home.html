@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - MindScript</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .animate-fadeIn {
+            animation: fadeIn 1.2s ease-in-out forwards;
+        }
+
+        .hero-bg {
+            background: linear-gradient(to right, rgba(0, 123, 255, 0.8), rgba(0, 123, 255, 0.6)),
+                url('image copy.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hover\:shadow-2xl:hover {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+    <!-- Navbar -->
+    <nav class="bg-gray-800 p-4 text-white">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-xl font-bold">MindScript</a>
+            <div>
+                <a href="../home-page/home.html" class="px-4 py-2 bg-gray-700 bg-yellow-400 text-gray-900 rounded">Home</a>
+                <a href="../paid-content/paidcontent.html" class="px-4 py-2 hover:bg-gray-700 rounded transition-all">Premium
+                    Content</a>
+                <a href="index.html" class="px-4 py-2 hover:bg-gray-700 rounded">Dashboard</a>
+                <a href="../ray-page/ray.html" class="px-4 py-2 hover:bg-gray-700 rounded">Practicals(Physics)</a>
+                <a href="../about-page/about.html" class="px-4 py-2 hover:bg-gray-700 rounded">About Us</a>
+                <a href="../contact-page/contact.html" class="px-4 py-2 hover:bg-gray-700 rounded">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg text-white p-12 text-center">
+        <h1 class="text-5xl font-bold mb-6 animate-fadeIn">Welcome to MindScript</h1>
+        <p class="text-xl mb-6 animate-fadeIn">Your Ultimate Destination for Quality Study Materials from Classes 9 to
+            12</p>
+        <a href="../paid-content/paidcontent.html"
+            class="px-8 py-3 bg-blue-500 rounded-lg text-white font-semibold hover:bg-yellow-600 transition-colors duration-300 animate-fadeIn">
+            Explore Premium Content
+        </a>
+    </section>
+
+    <!-- Featured Content Section -->
+    <section
+        class="container mx-auto my-10 p-6 bg-white shadow-lg hover:shadow-2xl rounded-lg transition-shadow duration-300">
+        <h2 class="text-3xl font-bold text-center mb-6 animate-fadeIn">Featured Notes</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Class 10 Science -->
+            <div class="bg-gray-200 p-6 rounded hover:shadow-2xl transition-shadow duration-300 animate-fadeIn">
+                <h3 class="text-2xl font-bold mb-2">Class 10 Science Notes</h3>
+                <p class="mb-4">A comprehensive guide to help you ace your Class 10 Science exams with ease.</p>
+                <a href="class10science.html" class="text-blue-500 hover:underline">Read More</a>
+            </div>
+            <!-- Class 12 Physics -->
+            <div class="bg-gray-200 p-6 rounded hover:shadow-2xl transition-shadow duration-300 animate-fadeIn">
+                <h3 class="text-2xl font-bold mb-2">Class 12 Physics Notes</h3>
+                <p class="mb-4">Master complex physics concepts with our detailed Class 12 notes.</p>
+                <a href="class12physics.html" class="text-blue-500 hover:underline">Read More</a>
+            </div>
+            <!-- Class 11 Chemistry -->
+            <div class="bg-gray-200 p-6 rounded hover:shadow-2xl transition-shadow duration-300 animate-fadeIn">
+                <h3 class="text-2xl font-bold mb-2">Class 11 Chemistry Notes</h3>
+                <p class="mb-4">Simplified Class 11 Chemistry notes to make learning easier.</p>
+                <a href="class11chemistry.html" class="text-blue-500 hover:underline">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Bhavy Notes Section -->
+    <section class="container mx-auto my-10 p-6 bg-blue-100 rounded-lg shadow-lg text-center">
+        <h2 class="text-3xl font-bold mb-6 animate-fadeIn">Why Choose MindScript?</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="p-4 animate-fadeIn">
+                <img src="image.png" Comprehensive class="mx-auto mb-4">
+                <h3 class="text-xl font-semibold">Comprehensive</h3>
+                <p class="mt-2">Detailed notes covering every important topic and concept.</p>
+            </div>
+            <div class="p-4 animate-fadeIn">
+                <img src="image copy 2.png" alt="Easy to Understand" class="mx-auto mb-4">
+                <h3 class="text-xl font-semibold">Easy to Understand</h3>
+                <p class="mt-2">Notes designed to simplify complex topics for easy learning.</p>
+            </div>
+            <div class="p-4 animate-fadeIn">
+                <img src="image copy 3.png" alt="Results Oriented" class="mx-auto mb-4">
+                <h3 class="text-xl font-semibold">Results Oriented</h3>
+                <p class="mt-2">Focused on helping you achieve the best results in exams.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white p-4 mt-10 transition-colors duration-300 hover:bg-gray-700">
+        <div class="container mx-auto text-center">
+            MindScript. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+
+</html>

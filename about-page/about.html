@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - MindScript</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .animate-fadeIn {
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+    <!-- Navbar -->
+    <nav class="bg-gray-800 p-4 text-white">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-xl font-bold">MindScript</a>
+            <div>
+                <a href="../paid-content/paidcontent.html"
+                    class="px-4 py-2 hover:bg-gray-700 rounded transition-all">Premium
+                    <a href="../home-page/home.html" class="px-4 py-2 hover:bg-gray-700">Home</a>
+                    Content</a>
+                <a href="/index.html" class="px-4 py-2 hover:bg-gray-700 rounded">Dashboard</a>
+                <a href="../ray-page/ray.html" class="px-4 py-2 hover:bg-gray-700 rounded">Practicals(Physics)</a>
+                <a href="../about-page/about.html"
+                    class="px-4 py-2 bg-gray-700 bg-yellow-400 text-gray-900 rounded">About Us</a>
+                <a href="../contact-page/contact.html" class="px-4 py-2 hover:bg-gray-700 ">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Us Section -->
+    <section
+        class="container mx-auto my-10 p-6 bg-white shadow-lg hover:shadow-2xl rounded-lg transition-shadow duration-300">
+        <h1 class="text-4xl font-bold text-center mb-6">About Us</h1>
+        <p class="text-lg leading-relaxed mb-6 animate-fadeIn">
+            Welcome to <span class="font-semibold">MindScript</span>, your go-to source for high-quality study notes. We
+            are committed to helping students in classes 9, 10, 11, and 12 excel in their academics by providing
+            well-organized, easy-to-understand notes.
+        </p>
+        <p class="text-lg leading-relaxed mb-6 animate-fadeIn">
+            Our mission is to make learning accessible and efficient by offering both free and premium content, tailored
+            to meet the needs of students across various boards and subjects. Whether you're preparing for your board
+            exams or just trying to keep up with class, we've got you covered.
+        </p>
+        <p class="text-lg leading-relaxed mb-6 animate-fadeIn">
+            At <span class="font-semibold">MindScript</span>, we believe that knowledge should be accessible to
+            everyone.
+            Our team of experienced educators and content creators work tirelessly to bring you the best resources,
+            designed to simplify complex topics and boost your confidence.
+        </p>
+        <p class="text-lg leading-relaxed mb-6 animate-fadeIn">
+            Join us on this journey of learning, and let <span class="font-semibold">MindScript</span> be your trusted
+            companion in achieving academic success.
+        </p>
+        <p class="text-lg leading-relaxed mb-6 animate-fadeIn">
+            Thank you for choosing <span class="font-semibold">MindScript</span>. We look forward to supporting you
+            every
+            step of the way.
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white p-4 mt-10 transition-colors duration-300 hover:bg-gray-700">
+        <div class="container mx-auto text-center">
+            MindScript All rights reserved.
+        </div>
+    </footer>
+</body>
+
+</html>

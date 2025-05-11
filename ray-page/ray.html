@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics Practicals - MindScript</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- FontAwesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Navbar -->
+    <nav class="bg-gray-900 p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-yellow-400">MindScript</a>
+            <button id="menu-toggle" class="text-white block md:hidden">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div id="menu" class="hidden md:flex space-x-4">
+                <a href="../home-page/home.html" class="px-4 py-2 text-white rounded hover:bg-gray-700">Home</a>
+                <a href="../paid-content/paidcontent.html" class="px-4 py-2 text-white rounded hover:bg-gray-700">Premium Content</a>
+                <a href="index.html" class="px-4 py-2 text-white rounded hover:bg-gray-700">Dashboard</a>
+                <a href="../ray-page/ray.html" class="px-4 py-2 bg-yellow-400 text-gray-900 rounded">Practicals (Physics)</a>
+                <a href="../about-page/about.html" class="px-4 py-2 text-white rounded hover:bg-gray-700">About Us</a>
+                <a href="../contact-page/contact.html" class="px-4 py-2 text-white rounded hover:bg-gray-700">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto mt-10 flex flex-col md:flex-row">
+        <!-- Main content -->
+        <main class="w-full md:w-3/4 pr-4">
+            <section class="mb-12">
+                <h2 class="text-4xl font-bold mb-8 text-center text-gray-800">Class 12 Topics</h2>
+                <div class="bg-white p-8 rounded-lg hover-card shadow-sm">
+                    <ul class="list-disc pl-5 space-y-3" id="class12">
+                        <li><a href="https://phet.colorado.edu/en/simulation/coulombs-law" target="_blank"
+                                class="text-blue-500 hover:underline">Coulomb’s Law</a></li>
+                        <li><a href="https://phet.colorado.edu/en/simulation/charges-and-fields" target="_blank"
+                                class="text-blue-500 hover:underline">Charges and Fields</a></li>
+                        <li><a href="https://phet.colorado.edu/en/simulation/ohms-law" target="_blank"
+                                class="text-blue-500 hover:underline">Ohm’s Law</a></li>
+                        <li><a href="https://phet.colorado.edu/en/simulation/circuit-construction-kit-dc" target="_blank"
+                                class="text-blue-500 hover:underline">Circuit Construction Kit (AC+DC)</a></li>
+                        <li><a href="https://phet.colorado.edu/en/simulation/faradays-law" target="_blank"
+                                class="text-blue-500 hover:underline">Faraday’s Law</a></li>
+                        <li><a href="https://phet.colorado.edu/en/simulation/magnets-and-electromagnets" target="_blank"
+                                class="text-blue-500 hover:underline">Magnets and Electromagnets</a></li>
+                        <li><a href="https://phet.colorado.edu/en/simulation/geometric-optics" target="_blank"
+                                class="text-blue-500 hover:underline">Geometric Optics (Lenses, Mirrors)</a></li>
+                        <li><a href="https://phet.colorado.edu/en/simulation/wave-interference" target="_blank"
+                                class="text-blue-500 hover:underline">Wave Interference</a></li>
+                        <li><a href="https://phet.colorado.edu/en/simulation/photoelectric" target="_blank"
+                                class="text-blue-500 hover:underline">Photoelectric Effect</a></li>
+                        <li><a href="https://phet.colorado.edu/en/simulation/alpha-decay" target="_blank"
+                                class="text-blue-500 hover:underline">Alpha Decay</a></li>
+                        <li><a href="https://phet.colorado.edu/en/simulation/radio-waves" target="_blank"
+                                class="text-blue-500 hover:underline">Radio Waves & Electromagnetic Fields</a></li>
+                        <li><a href="https://phet.colorado.edu/en/simulation/semiconductors" target="_blank"
+                                class="text-blue-500 hover:underline">Band Structure (Semiconductors)</a></li>
+                        <li><a href="https://phet.colorado.edu/en/simulation/capacitor-lab" target="_blank"
+                                class="text-blue-500 hover:underline">Capacitor Lab</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="mb-12">
+                <h2 class="text-4xl font-bold mb-8 text-center text-gray-800">Class 11 Topics</h2>
+                <div class="bg-white p-8 rounded-lg hover-card shadow-sm">
+                    <ul class="list-disc pl-5 space-y-3" id="class11">
+                        <li><a href="https://phet.colorado.edu/en/simulation/projectile-motion" target="_blank"
+                                class="text-blue-500 hover:underline">Projectile Motion</a></li>
+                        <li><a href="https://phet.colorado.edu/en/simulation/forces-and-motion-basics" target="_blank"
+                                class="text-blue-500 hover:underline">Forces and Motion</a></li>
+                        <li><a href="https://phet.colorado.edu/en/simulation/energy-skate-park-basics" target="_blank"
+                                class="text-blue-500 hover:underline">Energy Skate Park: Basics</a></li>
+                        <li><a href="https://phet.colorado.edu/en/simulation/pendulum-lab" target="_blank"
+                                class="text-blue-500 hover:underline">Pendulum Lab</a></li>
+                        <li><a href="https://phet.colorado.edu/en/simulation/gravity-and-orbits" target="_blank"
+                                class="text-blue-500 hover:underline">Gravity and Orbits</a></li>
+                        <li><a href="https://phet.colorado.edu/en/simulation/wave-on-a-string" target="_blank"
+                                class="text-blue-500 hover:underline">Wave on a String</a></li>
+                        <li><a href="https://phet.colorado.edu/en/simulation/sound" target="_blank"
+                                class="text-blue-500 hover:underline">Sound</a></li>
+                        <li><a href="https://phet.colorado.edu/en/simulation/balloons-and-static-electricity"
+                                target="_blank" class="text-blue-500 hover:underline">Balloons and Static
+                                Electricity</a>
+                        </li>
+                        <li><a href="https://phet.colorado.edu/en/simulation/torque" target="_blank"
+                                class="text-blue-500 hover:underline">Torque (Rotational Motion)</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Class 10 Topics Section -->
+            <section class="mb-12">
+                <h2 class="text-4xl font-bold mb-8 text-center text-gray-800">Class 10 Topics</h2>
+                <div class="bg-white p-8 rounded-lg hover-card shadow-sm">
+                    <ul class="list-disc pl-5 space-y-3" id="class10">
+                        <li><a href="https://phet.colorado.edu/en/simulation/forces-and-motion-basics" target="_blank"
+                                class="text-blue-500 hover:underline">Forces and Motion: Basics</a></li>
+                        <li><a href="https://phet.colorado.edu/en/simulation/energy-skate-park-basics" target="_blank"
+                                class="text-blue-500 hover:underline">Energy Skate Park: Basics</a></li>
+                        <li><a href="https://phet.colorado.edu/en/simulation/pendulum-lab" target="_blank"
+                                class="text-blue-500 hover:underline">Pendulum Lab</a></li>
+                        <li><a href="https://phet.colorado.edu/en/simulation/gravity-and-orbits" target="_blank"
+                                class="text-blue-500 hover:underline">Gravity and Orbits</a></li>
+                        <li><a href="https://phet.colorado.edu/en/simulation/geometric-optics" target="_blank"
+                                class="text-blue-500 hover:underline">Geometric Optics (Lenses, Mirrors)</a></li>
+                        <li><a href="https://phet.colorado.edu/en/simulation/bending-light" target="_blank"
+                                class="text-blue-500 hover:underline">Bending Light</a></li>
+                    </ul>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Sidebar -->
+        <aside class="w-full md:w-1/4 bg-gray-100 p-6 rounded-lg shadow-sm mt-6 md:mt-0">
+            <h3 class="text-2xl font-bold mb-4">Quick Links</h3>
+            <ul class="list-disc pl-5 space-y-3">
+                <li><a href="https://phet.colorado.edu/en/simulations/category/physics" target="_blank"
+                        class="text-blue-500 hover:underline">PhET Physics Simulations</a></li>
+                <li><a href="/home page/home.html" class="text-blue-500 hover:underline">Class 12 Notes</a></li>
+                <li><a href="/paid content/paidcontent.html" class="text-blue-500 hover:underline">Premium Physics Content</a></li>
+                <li><a href="https://ncert.nic.in/textbook.php" class="text-blue-500 hover:underline">NECRT-Books</a>
+                </li>
+            </ul>
+        </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white p-8 mt-12">
+        <div class="container mx-auto text-center">
+            <div class="mb-6">
+                <p class="text-sm">MindScript. All rights reserved.</p>
+            </div>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="#" aria-label="Facebook" class="text-white social-icon transition hover:text-blue-500"><i
+                        class="fab fa-facebook"></i></a>
+                <a href="#" aria-label="Twitter" class="text-white social-icon transition hover:text-blue-500"><i
+                        class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram" class="text-white social-icon transition hover:text-blue-500"><i
+                        class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            var menu = document.getElementById('menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>

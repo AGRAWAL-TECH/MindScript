@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase Complete - MindScript</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+    <!-- Navbar -->
+    <nav class="bg-gray-800 p-4 text-white">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-xl font-bold text-yellow-400">MindScript</a>
+            <div>
+                <a href="../home-page/home.html" class="px-4 py-2 hover:bg-gray-700 rounded">Home</a>
+                <a href="../paid-content/paidcontent.html" class="px-4 py-2 hover:bg-gray-700 rounded transition-all">Premium
+                    Content</a>
+                <a href="index.html" class="px-4 py-2 hover:bg-gray-700 rounded">Dashboard</a>
+                <a href="../ray-page/ray.html" class="px-4 py-2 hover:bg-gray-700 rounded">Practicals(Physics)</a>
+                <a href="../contact-page/contact.html" class="px-4 py-2 text-gray-900 rounded hover:bg-gray-700 rounded">Contact</a>
+                <a href="../about-page/about.html" class="px-4 py-2 hover:bg-gray-700 rounded">About Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Complete Purchase Section -->
+    <section class="container mx-auto my-10 p-6 bg-white shadow-md rounded-lg text-center" id="purchaseSection">
+        <h1 class="text-4xl font-bold text-gray-800 mb-6">Thank You for Your Purchase!</h1>
+        <p class="text-lg leading-relaxed text-gray-600 mb-10">
+            Your purchase has been successfully completed. You can now access your premium content and start learning
+            with <span class="font-semibold text-yellow-400">MindScript Premium</span>.
+        </p>
+
+        <div class="bg-gray-50 p-6 rounded-lg shadow-lg inline-block">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Order Details</h2>
+            <p class="mb-4">
+                <span class="font-semibold text-gray-700">Order Number:</span> #123456
+            </p>
+            <p class="mb-4">
+                <span class="font-semibold text-gray-700">Product:</span> Exclusive Chemistry Notes
+            </p>
+            <p class="mb-4">
+                <span class="font-semibold text-gray-700">Price:</span> ₹4999
+            </p>
+            <p class="mb-4">
+                <span class="font-semibold text-gray-700">Purchase Date:</span> August 22, 2025
+            </p>
+        </div>
+
+        <div class="mt-10">
+            <a href="../paid-content/paidcontent.html"
+                class="bg-yellow-400 text-gray-900 font-bold py-2 px-4 rounded-lg hover:bg-yellow-300 transition duration-300">Access
+                Your Content</a>
+        </div>
+    </section>
+
+    <!-- Payment Section (If user has not paid yet) -->
+    <section class="container mx-auto my-10 p-6 bg-white shadow-md rounded-lg text-center hidden" id="paymentSection">
+        <h1 class="text-4xl font-bold text-gray-800 mb-6">Complete Your Payment</h1>
+        <p class="text-lg leading-relaxed text-gray-600 mb-10">
+            Please complete the payment to access your premium content.
+        </p>
+        <button id="payButton"
+            class="bg-yellow-400 text-gray-900 font-bold py-2 px-4 rounded-lg hover:bg-yellow-300 transition duration-300">
+            Pay ₹499 Now
+        </button>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white p-4 mt-10">
+        <div class="container mx-auto text-center">
+            MindScript. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
